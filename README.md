@@ -1,4 +1,4 @@
-# angular-filter-numberonly
+# angular-directive-numberonly
 Angular directive that allow only number
 
 ## Usage

@@ -34,8 +34,6 @@ module.exports = function(grunt) {
   grunt.util._.extend(config, loadConfig('./grunt/options/'));
   grunt.initConfig(config);
 
-
-
   grunt.loadNpmTasks('grunt-angular-templates');
   grunt.loadNpmTasks('grunt-ng-constant');
   grunt.loadNpmTasks('grunt-cdn');

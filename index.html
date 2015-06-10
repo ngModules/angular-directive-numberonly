@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+<meta name="fragment" content="!">
+<title ng-bind="$root.pageTitle"></title>
+<!--IE Compatibility modes-->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<base href="/">
+
+<!--Mobile first-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- build:css styles/vendor.css -->
+<!-- bower:css -->
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css">
+<!-- endbower -->
+
+<!-- endbuild -->
+
+<!-- build:css styles/main.css -->
+<link rel="stylesheet" href="styles/main.css">
+<!-- endbuild -->
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="bower_components/json3/lib/json3.min.js"></script>
+      <script src="bower_components/html5shiv/dít/html5shiv.js"></script>
+      <script src="bower_components/respond/src/respond.js"></script>
+      <![endif]-->
+<!--For Development Only. Not required -->
+<!-- build:js scripts/preload.js -->
+
+<!-- endbuild -->
+</head>
+<body class="{{$root.chooseBodyClasses()}}">
+    <div ui-view id="wrapper"></div>
+
+    <!-- /#wrap -->
+    <footer class="Footer bg-dark dker">
+        <p>2014 &copy; Metis Bootstrap Admin Template</p>
+    </footer>
+    <!-- /#footer -->
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script> -->
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+    
+    <!-- endbower -->
+
+    <!-- endbuild -->
+
+    <!-- build:js scripts/script.js -->
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/routes.js"></script>
+    
+    <script src="scripts/controllers/DefaultController.js"></script>
+    
+    <!-- endbuild -->
+</body>

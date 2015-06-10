@@ -3,7 +3,7 @@
 
   'use strict';
 
-  angular.module('myapp', [ 'ui.router']);
+  angular.module('myapp', [ 'ui.router', 'inputFormatters']);
 
   angular.module('myapp').run(InitApplication);
 

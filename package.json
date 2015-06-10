@@ -6,6 +6,7 @@
 	"devDependencies": {
 		"http-server": "^0.6.1",
 		"shelljs": "^0.2.6",
+		"glob": "4.4.2",
 		"grunt": "~0.4.1",
 		"grunt-angular-templates": "^0.5.7",
 		"grunt-autoprefixer": "~0.4.0",

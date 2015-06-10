@@ -1,0 +1,15 @@
+sudo: false
+
+before_install:
+  - gem update --system
+  - npm update
+
+install:
+  - gem install compass
+  - npm install grunt-cli
+  - npm install bower
+  - npm install
+  - bower -f install
+
+script:
+  - grunt build
